@@ -2,6 +2,18 @@
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
 
+:root
+{
+    --fondo-pagina: #E5E5E5;
+    --fondo-elemento: #FFFAFA;
+    --color-texto: #000000;
+    --tipo-fuente-Roboto: "Roboto", "sans-serif";
+    --tamano-fuente: 16px;
+
+
+}
+
+
 /* Fuentes propias */
 @font-face 
 {
@@ -111,12 +123,120 @@
 
 html
 {
-    font-size: 16px;
-    font-family: Spartan,Roboto,sans-serif;
+    font-size: var(--tamano-fuente);
+    font-family: var(--tipo-fuente-Roboto);
     font-weight: 700;
 
-    text-transform: uppercase;
-    letter-spacing: -0.03em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: var(--fondo-pagina);
+    color: var(--color-texto);
 
 }
+
+.contenidoCentrado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Cambiar posicion Variable */
+    height: 733px;
+    width: 608px;
+}
+
+.componenteImagen
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+figure
+{
+    margin-block-start: -27px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-right: 29px;
+    margin-bottom: 9px;
+
+}
+
+.divLineaIzquierda
+{
+
+    position: absolute;
+    border: 1px solid var(--color-texto);
+    transform: rotate(45.5deg);
+    top: 67px;
+    left: 0px;
+    width: 150px;
+
+
+}
+
+.divLineaDerecha
+{
+    
+    position: absolute;
+    border: 1px solid var(--color-texto);
+    transform: rotate(134deg);
+    top: 67px;
+    left: 0px;
+    width: 150px;
+}
+
+.imagenFigure
+{
+    
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--color-texto);
+    background-color: var(--fondo-elemento);
+
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.figureImagenPeke
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.descripcionFoto
+{
+    margin-top: 8px;
+
+    font-weight: 400;
+    line-height: 18px;
+    
+    background-color: var(--fondo-elemento);
+    text-align: center;
+    
+    border: 1px solid var(--color-texto);
+    border-radius: 0px 0px 10px 10px;
+
+
+}
+
+.textoMayor
+{
+    background-color: var(--fondo-elemento);
+    width: 143px;
+    height: 160px;
+
+    border: 1px solid var(--color-texto);
+    border-radius: 10px;
+    padding: 8px;
+
+}
+
+

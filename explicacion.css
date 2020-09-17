@@ -1,0 +1,32 @@
+/* VARIABLES */
+/* ====================== */
+/* definicion de una variable: */
+
+/* ZONA DEFINICION DE COLOR */
+
+:root
+{
+    --color-gris-claro: #C6C6C6;
+    --color-gris-medio: #F3F3F3;
+    --color-gris-oscuro: #3A3A3A;
+
+}
+
+:root
+{
+    --tipo-peke: "Roboto"
+
+}
+
+h5
+{
+    color: var(--color-gris-claro);
+}
+
+body
+{
+    background-color: var(--color-gris-medio);
+    font-family: var(--tipo-peke);
+
+}
+
