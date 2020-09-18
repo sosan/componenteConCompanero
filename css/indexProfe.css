@@ -1,0 +1,188 @@
+/* CSS PROPIO DE INDEXPROFE.HTML */
+
+/* VARIABLES */
+
+
+
+/* Fuentes propias */
+@font-face 
+{
+    font-family: "robotoregular";
+    font-weight: normal;
+    font-style: normal;
+    src:
+        url("../font/roboto-regular-webfont.woff2") format("woff2"),
+        url("../font/roboto-regular-webfont.woff") format("woff");
+
+}
+
+:root
+{
+    /* Colores */
+    --fondo-dev-brown: brown;
+    --fondo-dev-blue: blue;
+
+    --color-grey-light: #c6c6c6;
+    --color-grey-dark: #3a3a3a;
+    --color-grey-medium: #929292;
+    --card_fondo: #f4f4f4;
+    --white: #f2f2f2;
+    --black: #080808;
+
+    /* Fuente */
+    --font-primary: "robotoregular";
+    --font-secondary: sans-serif;
+    --font-size-default: 16px;
+    --font-weight-default: normal;
+
+
+    --card-radius-foto: 10px;
+
+
+    /* Agrupacion fisica de unidades */
+    --h1: 2.1rem;
+    --h2: 1.2rem;
+    --h3: 0.9rem;
+    --h4: 1rem;
+    --h5: 0.8rem;
+    --h6: 0.4rem;
+
+    /* Agrupacion logica de unidades */
+    --size-pie: var(--h5);
+    --size-titulo: var(--h1);
+    --size-parrafo: var(--h3);
+
+    --p: var(--h4);
+    --copyright: calc(var(--h6) - 2px);
+
+
+    --icono-sociales-size: 38px;
+    
+/* --------- Card */
+
+    /* Sombra Card */
+    --card-shadow-right: 3px;
+    --card-shadow-down: 3px;
+    --card-shadow-blur: 5px;
+    --card-shadow-color: rgba(0, 0, 0, 0.25);
+    
+    
+    
+
+
+
+}
+
+
+html
+{
+    font-family: var(--font-primary), var(--font-secondary);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-default);
+}
+
+.pie_foto
+{
+
+    font-size: var(--size-pie);
+    color: var(--color-grey-light);
+
+}
+
+.titulo
+{
+    font-size: var(--size-titulo);
+    color: var(--color-grey-dark);
+    
+}
+
+.parrafo
+{
+    font-size: var(--size-parrafo);
+    color: var(--color-grey-medium);
+
+}
+
+.copyright
+{   
+    font-size: var(--copyright);
+
+}
+
+
+.iconosSociales
+{
+    width: var(--icono-sociales-size);
+    height: var(--icono-sociales-size);
+
+}
+
+.card_banner
+{
+    border-radius: var(--card-radius-foto) var(--card-radius-foto) 0px 0px;
+
+}
+/* ------------------- */
+.card
+{
+
+    width: 230px;
+    /* height: 300px; */
+
+    border-radius: var(--card-radius-foto);
+    background-color: var(--card_fondo);
+
+    box-shadow: 
+        var(--card-shadow-right)
+        var(--card-shadow-down)
+        var(--card-shadow-blur) 
+        var(--card-shadow-color);
+
+}
+
+.card_banner
+{
+    width: 100%;
+    border-radius: var(--card-radius-foto) var(--card-radius-foto) 0px 0px;
+
+}
+
+figcaption.card_texto
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+ul.card_texto_grupo
+{
+    list-style-type: none;
+    
+    padding: 0px;
+    margin: 10px;
+
+}
+
+.card_texto_grupo_titulo
+{
+    margin-top: 0.5rem;
+   
+}
+
+
+li.card_texto_grupo_parrafo
+{
+    width: 100%;
+    text-align: left;
+    line-height: 1.4rem;
+
+}
+
+/* li.card_texto_grupo_pie
+{
+    font-size: ;
+
+} */
+
+
+

@@ -2,14 +2,19 @@
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
 
+/* Variables */
 :root
 {
+    /* Colores */
     --fondo-pagina: #E5E5E5;
     --fondo-elemento: #FFFAFA;
     --color-texto: #000000;
+    /* Tipo de fuente */
     --tipo-fuente-Roboto: "robotoregular", "sans-serif";
     --tamano-fuente: 16px;
 
+    --btn-enviar-color: var(--fondo-pagina);
+    
 
 }
 
